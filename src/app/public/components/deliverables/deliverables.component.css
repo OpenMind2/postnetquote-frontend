@@ -1,0 +1,22 @@
+.title{
+  font-size: 20px;
+  text-align: center;
+}
+.proyect-title{
+  font-size: 15px;
+  text-align: center;
+}
+.mat-card-title{
+  font-size: 15px;
+  text-align: center;
+}
+.mat-icon{
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.deliverable-cards{
+  margin-top: 25px;
+  margin-left: 400px;
+  width: 40%;
+}
