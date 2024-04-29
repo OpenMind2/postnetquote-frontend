@@ -1,0 +1,121 @@
+<header>
+  <mat-toolbar class="navbar">
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <div class="nav-options">
+      <a mat-button [routerLink]="'/register'" style="color: white" class="btn-nav">Registrarme</a>
+      <a mat-button [routerLink]="'/sign-in'" style="color: white" class = "btn-primary-nav">Iniciar Sesión</a>
+      <mat-divider [vertical] ="true" [inset]="true"></mat-divider>
+    </div>
+  </mat-toolbar>
+</header>
+<router-outlet></router-outlet>
+<main class ='main'>
+  <section class ="desciption-img">
+    <img src="assets/workman.jpg" alt="Trabajador" class="desciption-backgroung-img">
+    <article class="description-block">
+      <h2 class="description-title">Easy Posts</h2>
+      <p class="description-description">Aquí, las empresas líderes en la industria de la fibra óptica comparten actualizaciones transparentes y detalladas sobre la construcción de postes de fibra óptica. Descubre el plan de trabajo, sigue el progreso de la construcción y comprende el presupuesto de cada proyecto. Mantente informado y ve cómo se construye el futuro de la conectividad</p>
+    </article>
+  </section>
+  <section class ="serv-container-main">
+    <img src="assets/servicios.png" alt="Servicios" class="serv-background-img">
+    <article class="serv-container">
+      <h1 class="serv-title">Nuestros Servicios</h1>
+      <div class="serv-divider"></div>
+      <section class="service-titles-section">
+        <div class="service-title-box">
+          <div class="service-icon"></div>
+          <h2 class="service-title">Gestión Integral de Proyectos</h2>
+        </div>
+        <div class="service-title-box">
+          <div class="service-icon"></div>
+          <h2 class="service-title">Visualización de Avances en Tiempo Real</h2>
+        </div>
+        <div class="service-title-box">
+          <div class="service-icon"></div>
+          <h2 class="service-title">Automatización y Personalización</h2>
+        </div>
+      </section>
+      <section class="service-desc-section">
+        <div class="serv-desc">
+          <p>
+            Ofrecemos una solución todo-en-uno para la gestión de proyectos de infraestructura de redes,
+            permitiendo a nuestros clientes planificar, ejecutar y monitorear sus proyectos con facilidad y precisión.
+            Desde la fase de diseño hasta la implementación, nuestra plataforma proporciona herramientas avanzadas para cada paso,
+            asegurando el éxito y la eficiencia.
+          </p>
+        </div>
+        <div class="serv-desc">
+          <p>
+            Ofrecemos una solución todo-en-uno para la gestión de proyectos de infraestructura de redes,
+            permitiendo a nuestros clientes planificar, ejecutar y monitorear sus proyectos con facilidad y precisión.
+            Desde la fase de diseño hasta la implementación, nuestra plataforma proporciona herramientas avanzadas para cada paso,
+            asegurando el éxito y la eficiencia.
+          </p>
+        </div>
+        <div class="serv-desc">
+          <p>
+            Ofrecemos una solución todo-en-uno para la gestión de proyectos de infraestructura de redes,
+            permitiendo a nuestros clientes planificar, ejecutar y monitorear sus proyectos con facilidad y precisión.
+            Desde la fase de diseño hasta la implementación, nuestra plataforma proporciona herramientas avanzadas para cada paso,
+            asegurando el éxito y la eficiencia.
+          </p>
+        </div>
+      </section>
+    </article>
+  </section>
+  <section class="project-container-main">
+    <img src="assets/proyectos.png" alt="Descriptive alternative text" class="project-background-img"/>
+    <div class="project-container">
+      <header class="project-container-title">Nuestros Proyectos</header>
+      <div class="project-wrapper">
+        <article class="project-item">
+          <div class="project-image"></div>
+          <h3 class="project-title">Proyecto 1</h3>
+          <p class="project-description">Aca pondria un proyecto</p>
+        </article>
+        <article class="project-item">
+          <div class="project-image"></div>
+          <h3 class="project-title">Proyecto 2</h3>
+          <p class="project-description">Si tan solo tuviera uno</p>
+        </article>
+      </div>
+      <button class="project-see-more">Ver más</button>
+    </div>
+  </section>
+</main>
+<footer class="footer-main-content">
+  <hr class="footer-divider">
+  <section class="footer-content-section">
+    <article class="footer-info-article">
+      <h2 class="footer-info-title">PostNetQuote</h2>
+      <div class="footer-images-container">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/199c9a3c64fa87237dabe74b1aff1fe617935141f37a07ba364b7012e90e628c?apiKey=1fbcf88b7e6a441b8bb82c7d73f89907&" alt="" class="footer-information-img" />
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b1bac3668b19309ab1c82835d154f9962b24bad9c262723d53374e3173c3e762?apiKey=1fbcf88b7e6a441b8bb82c7d73f89907&" alt="" class="footer-information-img" />
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9c8d64becb556072cf4288b2dadd32d18a3ce8e19d5cc15f298f66d1125313b?apiKey=1fbcf88b7e6a441b8bb82c7d73f89907&" alt="" class="footer-information-img" />
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0828515f09127d365461d17e1036e88788811bd5c0258116139d171a870fbe56?apiKey=1fbcf88b7e6a441b8bb82c7d73f89907&" alt="" class="footer-information-img" />
+      </div>
+    </article>
+    <nav class="footer-navigation-menu">
+      <div class="footer-information-column">
+        <h3 class="footer-column-title">Información</h3>
+        <ul class="footer-info-list">
+          <li>Usuarios</li>
+          <li>Empresas</li>
+          <li>Proyectos</li>
+        </ul>
+      </div>
+      <div class="footer-company-column">
+        <h3 class="footer-column-title">Empresas</h3>
+        <ul class="footer-company-info-list">
+          <li>Acerca de</li>
+          <li>Contacto</li>
+          <li>Trabaja con nosotros</li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <div class="site-footer">
+    <p class="footer-text">© 2023 Company Name. Todos los derechos reservados.</p>
+  </div>
+</footer>
