@@ -7,6 +7,7 @@ import {UserAuthenticationService} from "../../services/user-authentication.serv
   templateUrl: './signin.component.html',
   styleUrl: './signin.component.css'
 })
+
 export class SigninComponent {
   correo_electronico: any;
   contrasena: any;

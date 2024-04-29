@@ -25,7 +25,7 @@ export class UserAuthenticationService {
   }
 
   login(email: string, password: string): Observable<any> {
-    return this.http.post(`${this.baseUrl}/usuarios`, { email, password });
+    return this.http.post(`${this.baseUrl}`, { email, password });
   }
 
   logout(): void {
