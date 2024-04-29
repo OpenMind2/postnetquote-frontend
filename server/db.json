@@ -1,0 +1,32 @@
+{
+  "deliverables": [
+    {
+      "id": "1",
+      "name": "Información de material y costos",
+      "description":"Este entregable consistirá en un documento detallado que describa los materiales que se van a utilizar en el proyecto, los diferentes tipos de calidad. Adicional se va a detallar los tipos de postes con sus respectivos costos de cada uno.",
+      "limitDate": "12/10/2021",
+      "status": "Pendiente"
+    },
+    {
+      "id": "2",
+      "name": "Planos y estructura del proyecto",
+      "description": "Se entregará un prototipo interactivo de los planos.",
+      "limitDate": "12/10/2021",
+      "status": "Pendiente"
+    },
+    {
+      "id": "3",
+      "name": "Cronograma y avance del proyecto",
+      "description": "En esta entrega se enviará el cronograma de cuando se culminaría con el proyecto",
+      "limitDate": "12/10/2021",
+      "status": "Pendiente"
+    },
+    {
+      "id": "4",
+      "name": "Compra de material para el proyecto",
+      "description": "Esta entrega consistirá en la entrega de evidencia e información",
+      "limitDate": "12/10/2021",
+      "status": "Pendiente"
+    }
+  ]
+}
