@@ -10,22 +10,9 @@ import {UserAuthenticationService} from "../../services/user-authentication.serv
 export class SigninComponent {
   correo_electronico: any;
   contrasena: any;
-  selectedUserType: 'keeper' | 'traveller' | null = null;
   constructor(private router: Router, private authService: UserAuthenticationService){}
   goToRegister(){
     this.router.navigateByUrl('/register-user');
-  }
-
-  goToKeeper(){
-    this.router.navigateByUrl('/home-keeper');
-  }
-
-  goToTraveller(){
-    this.router.navigateByUrl('/home-traveller');
-  }
-
-  selectUserType(type: 'keeper' | 'traveller') {
-    this.selectedUserType = type;
   }
   login() {
     this.authService.authenticate(this.correo_electronico, this.contrasena).subscribe({

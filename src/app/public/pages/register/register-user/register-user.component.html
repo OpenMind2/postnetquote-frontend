@@ -1,1 +1,81 @@
-<p>register-user works!</p>
+<div class="structure">
+  <mat-card class="img-card" style="width: 500px !important; height: 900px">
+    <mat-card-content>
+      <div class="img-container">
+        <img src="assets/logo-register.png" alt="logo" style="width: 240px;">
+      </div>
+      <div class="label-container">
+        <mat-label style="text-align: center; font-size: 50px; color: #704116;"><b>PostNetQuote</b></mat-label>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="form-card" style="width: 600px; height: 900px">
+    <mat-card-content>
+      <div class="user-info">
+        <section>
+          <mat-label>Seleccione el tipo de usuario a crear</mat-label>
+          <div class="user-options">
+            <button mat-button (click)="goToRegisterCompany();">Miembro de una empresa</button>
+            <button mat-button class="active">Cliente</button>
+          </div>
+        </section>
+        <br>
+        <mat-label style="text-align: center; font-size: 30px"><b>Registrate</b></mat-label>
+        <br><br>
+        <mat-label style="text-align: left; font-size: 15px">Ingrese la información solicitada</mat-label>
+        <br>
+
+        <div class="form-row">
+          <mat-label>Nombres:</mat-label>
+          <mat-form-field>
+            <input matInput [(ngModel)]="name" placeholder="Nombres">
+          </mat-form-field>
+        </div>
+
+        <div class="form-row">
+          <mat-label>Apellidos:</mat-label>
+          <mat-form-field>
+            <input matInput [(ngModel)]="lastName" placeholder="Apellidos">
+          </mat-form-field>
+        </div>
+
+        <div class="form-row">
+          <mat-label>Fecha de Nacimiento:</mat-label>
+          <mat-form-field>
+            <input matInput [(ngModel)]="birthdate" type="date">
+          </mat-form-field>
+        </div>
+
+        <div class="form-row">
+          <mat-label>Teléfono:</mat-label>
+          <mat-form-field>
+            <input matInput [(ngModel)]="phone" type="number" placeholder="Teléfono">
+          </mat-form-field>
+        </div>
+
+        <div class="form-row">
+          <mat-label>Correo:</mat-label>
+          <mat-form-field>
+            <input matInput [(ngModel)]="email" placeholder="Correo electrónico">
+          </mat-form-field>
+        </div>
+
+        <div class="form-row">
+          <mat-label>Contraseña:</mat-label>
+          <mat-form-field>
+            <input matInput [(ngModel)]="password" type="password" placeholder="Contraseña">
+          </mat-form-field>
+        </div>
+
+        <div class="form-row">
+          <mat-label>Repetir Contraseña:</mat-label>
+          <mat-form-field>
+            <input matInput [(ngModel)]="repeat_password" type="password" placeholder="Contraseña">
+          </mat-form-field>
+        </div>
+        <button mat-button style="color: black; background-color: #7cb9e8" class="submit-button" (click)="goToLogin();">Finalizar registro de Traveller</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
